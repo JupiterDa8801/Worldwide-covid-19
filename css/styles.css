@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  background-color: inherit;
+  padding: 15px;
+  text-align: center;
+}
+
+.global-box {
+  bottom: 40px;
+  left: 10px;
+}
+
+.country-box {
+  top: 40px;
+  left: 10px;
+}
+
+.selector-box {
+  bottom: 40px;
+  right: 10px;
+}
+
+.temp-box {
+  top: 40px;
+  right: 10px;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+h3{
+  color: #BB6464;
+}
+#confirm{
+  color: #DA1212;
+}
+#death{
+  color: white;
+}
+#selector{
+  color: #BB6464;
+}
+p{
+  color:#219F94;
+}
