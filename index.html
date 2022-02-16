@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Worldwide Covid-19</title>
+  <link rel="icon"
+    href="virus icon/external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png">
+</head>
+
+<body>
+  <div id='map'></div>
+
+  <div id='global-box' class="box global-box"></div>
+
+  <div id='country-box' class="box country-box"></div>
+
+  <div id='selector-box' class="box selector-box">
+    <label for="start-date"><div id="selector">Start Date</label></div>
+    <input type="date" id="start" name="start-date" min="2020-03-01" value="2020-03-01">
+    <br>
+    <label for="end-date"><div id="selector">End Date</label></div>
+    <input type="date" id="end" name="end-date" min="2020-03-01">
+  </div>
+
+  <div id='temp-box' class="box temp-box"></div>
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYXNocnVrYW5hIiwiYSI6ImNremg1MjdpaTBocGYydnBkOXRpMmFpcTMifQ.5Ubu6yzrnGYnv0J55IZ8nQ';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+
+    zoom: 1
+  });
+</script>
+
+<script src="js/default.js"></script>
+<script src="js/index.js"></script>
+
+</html>
